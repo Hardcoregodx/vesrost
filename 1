@@ -1,0 +1,23 @@
+# a = x / (y**2) , Underweight < 18.5 , Normal => 18.5 and < 25 , Overweight => 25 and < 30 , Obesity > 30
+
+ves = float(input('Укажите ваш вес в кг '))
+rost = float(input('Укажите ваш рост в м '))
+
+print('Ваш вес - ' + str(ves) , 'Ваш рост - ' + str(rost))
+
+
+a = ves / (rost**2)
+print ('Ваше соотношение - ' + str(a))
+
+
+if a < 18.5:
+	print('Underweight')
+
+elif a >= 18.5 and a < 25:
+	print('Normal')
+
+elif a >= 25 and a < 30:
+	print('Overweight')
+
+elif a > 30:
+	print('Obesity')
